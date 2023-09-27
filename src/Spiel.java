@@ -59,8 +59,8 @@ public Spiel(){
     }
 
     public static void infoAusgeben(){
-        for (int i=0;i<=satz.size();i++){
-            karteZiehen();
+        for (int i=0;i<satz.size();i++){
+
             System.out.print(satz.get(i).getWort()+" ");
         }
 
@@ -69,7 +69,7 @@ public Spiel(){
         int ergebnis= 0;
         int aktuell=0;
 
-        for (int i=0;i<=10;i++){
+        for (int i=0;i<10;i++){
             karteZiehen();
             aktuell = satz.get(i).getWert();
             ergebnis = ergebnis+aktuell;
